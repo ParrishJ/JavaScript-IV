@@ -38,10 +38,10 @@ class Student extends Person {
         console.log(`${this.favSubjects}`);
     }
     PRAssignment(subject){
-        console.log(`${student.name} has submitted a PR for subject ${subject}.`);
+        console.log(`${this.name} has submitted a PR for subject ${subject}.`);
     }
     sprintChallenge(subject){
-        console.log(`${student.name} has begun sprint challenge on ${subject}.`);
+        console.log(`${this.name} has begun sprint challenge on ${subject}.`);
     }
 }
 
@@ -59,73 +59,106 @@ class ProjectManager extends Instructor {
     }
 }
 
-const JohnSmith = new Person ({
+const johnSmith = new Person ({
     name: "John Smith",
     age: 35,
     location: "Nashville, TN", 
     gender: "Male"
 });
 
-const JaneDoe = new Person ({
+const janeDoe = new Person ({
     name: "Jane Doe",
     age: 55,
     location: "New York, NY",
     gender: "Female"
 });
 
-const CarlosGretsky = new Student ({
+const carlosGretsky = new Instructor ({
     name: "Carlos Gretsky",
     age: 29,
     location: "Houston, TX",
-    gender: "Male"
+    gender: "Male",
+    specialty: "back-end",
+    favLanguage: "Javascript",
+    catchPhrase: "Up and at em!"
 });
 
-const JoannaGreen = new Student ({
+const joannaGreen = new Instructor ({
     name: "Joanna Green",
     age: 22,
     location: "Anchorage, AK", 
-    gender: "Female"
+    gender: "Female",
+    specialty: "full-stack",
+    favLanguage: "Python",
+    catchPhrase: "Easy come, easy go."
 });
 
-const GreggoryWong = new Instructor ({
+const greggoryWong = new Student ({
     name: "Greggory Wong",
     age: 35,
     location: "Phoenix, AZ",
-    gender: "Male"
+    gender: "Male",
+    previousBackground: "Customer Service",
+    className: "Web18",
+    favSubjects: ['javascript', 'C++', 'python']
 });
 
-const ChelseaCarter = new Instructor ({
+const chelseaCarter = new Student ({
     name: "Chelsea Carter",
     age: 39,
     location: "Chicago, IL", 
-    gender: "Female"
+    gender: "Female",
+    previousBackground: "Pest Control",
+    className: "Web19",
+    favSubjects: ['javascript', 'CSS', 'HTML']
 });
 
-const MichaelMcTarnahan = new ProjectManager ({
+const michaelMcTarnahan = new ProjectManager ({
     name: "Michael McTarnahan",
     age: 65,
     location: "San Diego, CA", 
-    gender: "Male"
+    gender: "Male",
+    specialty: "full-stack",
+    favLanguage: "Python",
+    catchPhrase: "Easy come, easy go.",
+    gradClassName: "web1",
+    favInstructor: "Josh Knell"
 });
 
-const RachelHernandez = new ProjectManager ({
+const rachelHernandez = new ProjectManager ({
     name: "Rachel Hernandez",
     age: 34,
     location: "Portland, OR",
-    gender: "Female"
+    gender: "Female",
+    specialty: "full-stack",
+    favLanguage: "Python",
+    catchPhrase: "Easy come, easy go.",
+    gradClassName: "web2",
+    favInstructor: "Daniel Frehner"
 });
 
-console.log(JohnSmith);
-console.log(JaneDoe);
-console.log(JohnSmith.speak());
-console.log(JaneDoe.speak());
-/* console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log();
-console.log(); */
+console.log(johnSmith);
+console.log(janeDoe);
+console.log(johnSmith.speak());
+console.log(janeDoe.speak());
+console.log(carlosGretsky);
+console.log(joannaGreen);
+console.log(carlosGretsky.demo("CSSII"));
+console.log(carlosGretsky.grade(greggoryWong, "HTMLI"));
+console.log(joannaGreen.demo("CSSII"));
+console.log(joannaGreen.grade(greggoryWong, "HTMLI"));
+console.log(greggoryWong);
+console.log(chelseaCarter);
+console.log(greggoryWong.listSubjects());
+console.log(chelseaCarter.PRAssignment("JSII"));
+console.log(chelseaCarter.sprintChallenge("Advanced CSS"));
+console.log(michaelMcTarnahan);
+console.log(rachelHernandez);
+console.log(michaelMcTarnahan.standUP("web18_michael"));
+console.log(rachelHernandez.debugsCode(chelseaCarter, "Applied Javascript"));
+console.log(michaelMcTarnahan.grade(chelseaCarter, "Advanced CSS"));
+console.log(rachelHernandez.speak());
+
+
+
+
