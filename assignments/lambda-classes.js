@@ -8,7 +8,7 @@ class Person {
         this.gender = personProps.gender;
     }
     speak(){
-        console.log(`Hello my name is ${this.name}, I am from ${this.location}.`)
+        console.log(`Hello my name is ${this.name}, I am from ${this.location}.`);
     }
 }
 
@@ -23,7 +23,7 @@ class Instructor extends Person {
         console.log(`Today we are learning about ${subject}.`);
     }
     grade(Student, subject){
-        console.log(`${Student.name} receives a perfect score on ${subject}`)
+        console.log(`${Student.name} receives a perfect score on ${subject}`);
     }
 }
 
@@ -55,7 +55,7 @@ class ProjectManager extends Instructor {
         console.log(`${this.name} announces to ${channel}, @channel standby times!`);
     }
     debugsCode(Student, subject){
-        console.log(`${this.name} debugs ${Student.name}'s code on ${subject}.`)
+        console.log(`${this.name} debugs ${Student.name}'s code on ${subject}.`);
     }
 }
 
