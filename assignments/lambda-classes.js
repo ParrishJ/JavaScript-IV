@@ -118,10 +118,10 @@ const michaelMcTarnahan = new ProjectManager ({
     age: 65,
     location: "San Diego, CA", 
     gender: "Male",
-    specialty: "full-stack",
-    favLanguage: "Python",
-    catchPhrase: "Easy come, easy go.",
-    gradClassName: "web1",
+    specialty: "React",
+    favLanguage: "java",
+    catchPhrase: "Yippy-skip-skippy!",
+    gradClassName: "web3",
     favInstructor: "Josh Knell"
 });
 
@@ -130,10 +130,10 @@ const rachelHernandez = new ProjectManager ({
     age: 34,
     location: "Portland, OR",
     gender: "Female",
-    specialty: "full-stack",
+    specialty: "Django",
     favLanguage: "Python",
-    catchPhrase: "Easy come, easy go.",
-    gradClassName: "web2",
+    catchPhrase: "You got this!",
+    gradClassName: "web3",
     favInstructor: "Daniel Frehner"
 });
 
