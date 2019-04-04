@@ -13,7 +13,7 @@ class Person {
 }
 
 class Instructor extends Person {
-    constuctor(instructorProps){
+    constructor(instructorProps){
         super(instructorProps);
         this.specialty = instructorProps.specialty;
         this.favLanguage = instructorProps.favLanguage;
@@ -58,3 +58,74 @@ class ProjectManager extends Instructor {
         console.log(`${this.name} debugs ${Student.name}'s code on ${subject}.`)
     }
 }
+
+const JohnSmith = new Person ({
+    name: "John Smith",
+    age: 35,
+    location: "Nashville, TN", 
+    gender: "Male"
+});
+
+const JaneDoe = new Person ({
+    name: "Jane Doe",
+    age: 55,
+    location: "New York, NY",
+    gender: "Female"
+});
+
+const CarlosGretsky = new Student ({
+    name: "Carlos Gretsky",
+    age: 29,
+    location: "Houston, TX",
+    gender: "Male"
+});
+
+const JoannaGreen = new Student ({
+    name: "Joanna Green",
+    age: 22,
+    location: "Anchorage, AK", 
+    gender: "Female"
+});
+
+const GreggoryWong = new Instructor ({
+    name: "Greggory Wong",
+    age: 35,
+    location: "Phoenix, AZ",
+    gender: "Male"
+});
+
+const ChelseaCarter = new Instructor ({
+    name: "Chelsea Carter",
+    age: 39,
+    location: "Chicago, IL", 
+    gender: "Female"
+});
+
+const MichaelMcTarnahan = new ProjectManager ({
+    name: "Michael McTarnahan",
+    age: 65,
+    location: "San Diego, CA", 
+    gender: "Male"
+});
+
+const RachelHernandez = new ProjectManager ({
+    name: "Rachel Hernandez",
+    age: 34,
+    location: "Portland, OR",
+    gender: "Female"
+});
+
+console.log(JohnSmith);
+console.log(JaneDoe);
+console.log(JohnSmith.speak());
+console.log(JaneDoe.speak());
+/* console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log(); */
